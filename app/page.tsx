@@ -38,7 +38,7 @@ export default function AutoWebsiteReveal() {
           onEnded={handleVideoEnd}
         />
         {!isPlaying && !videoEnded && (
-          <div className="absolute inset-0 flex flex-col items-center justify-end  pb-[225px]">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-56">
             <div
               onClick={handlePlay}
               className="relative w-32 h-32 flex items-center justify-center cursor-pointer select-none
