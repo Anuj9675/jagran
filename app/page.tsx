@@ -34,20 +34,20 @@ export default function AutoWebsiteReveal() {
         <video
           ref={videoRef}
           className="w-full h-full object-cover"
-          src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          src="/videos/launch.mp4"
           onEnded={handleVideoEnd}
         />
         {!isPlaying && !videoEnded && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="absolute inset-0 flex flex-col items-center justify-end pl-8 pb-[180px]">
             <div
               onClick={handlePlay}
-              className="relative w-36 h-36 flex items-center justify-center cursor-pointer select-none
-                transition-transform duration-150 ease-in-out transform hover:scale-105 hover:shadow-lg "
+              className="relative w-32 h-32 flex items-center justify-center cursor-pointer select-none
+                transition-transform duration-150 ease-in-out transform hover:scale-105 hover:shadow-lg animate-pulse opacity-60"
             >
               <img
                 src="/launch.svg"
                 alt="Launch"
-                className="w-36 h-36 object-contain"
+                className="w-28 h-28 object-contain"
               />
             </div>
           </div>
