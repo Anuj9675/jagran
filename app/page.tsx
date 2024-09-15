@@ -38,16 +38,16 @@ export default function AutoWebsiteReveal() {
           onEnded={handleVideoEnd}
         />
         {!isPlaying && !videoEnded && (
-          <div className="absolute inset-0 flex flex-col items-center justify-center pt-56">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-56 ">
             <div
               onClick={handlePlay}
-              className="relative w-32 h-32 flex items-center justify-center cursor-pointer select-none
-                transition-transform duration-150 ease-in-out transform hover:scale-105 hover:shadow-lg animate-pulse opacity-60"
+              className="relative w-64 h-64 flex items-center justify-center cursor-pointer select-none
+                transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg animate-pulse opacity-80"
             >
               <img
-                src="/launch.svg"
+                src="/heart.png"
                 alt="Launch"
-                className="w-28 h-28 object-contain"
+                className="w-60 h-60 object-contain"
               />
             </div>
           </div>
